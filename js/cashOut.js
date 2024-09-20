@@ -10,7 +10,7 @@ const cashOutPin = getCashOutValueById("cashOut-money-pin");
 
  
  
-    if (cashOutPin === 123 ) {
+    if (cashOutPin === 12345 ) {
      const mainBalance = getBalance("balance");
 
         if(cashOutMoney > mainBalance){
@@ -26,7 +26,7 @@ const cashOutPin = getCashOutValueById("cashOut-money-pin");
    const transectionHistory = document.createElement('p')
    transectionHistory.innerHTML = `
       
-   <p class="text-md p-2 bg-orange-300 text-white">Added Amount : ${cashOutMoney}  New Balance : ${totalMoney}</p>
+   <p class="text-md px-3 py-2 bg-red-200 rounded-xl text-black">Cash Out : ${cashOutMoney}  New Balance : ${totalMoney}</p>
 
  `
    

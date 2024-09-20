@@ -18,7 +18,7 @@ document.getElementById("add-money-button").addEventListener('click' , function(
      
     
 
-    if(addPinValue === '123'){
+    if(addPinValue === '12345'){
       const balance = document.getElementById("balance")
       const balanceValue = balance.innerText;
       const balanceNumber = parseFloat(balanceValue)

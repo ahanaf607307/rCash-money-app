@@ -8,7 +8,7 @@ const loginButton = document.getElementById("login-button").addEventListener('cl
    
     console.log(phoneNumberValue , pinNumberValue)
    
-    if(phoneNumberValue === "123" && pinNumberValue === "00"){
+    if(phoneNumberValue === "12345" && pinNumberValue === "12345"){
          
          window.location.href = "./home.html"
          

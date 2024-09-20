@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rCash | Ahanaf</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui ends -->
+</head>
+<body>
+    
+
+    <!-- main start -->
+     <main class="flex justify-center ">
+        <div class="mockup-phone mt-5 ">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard bg-teal-500 artboard-demo phone-3 p-5">
+
+                <!-- account balance section -->
+                <div class="flex w-full flex-col lg:flex-row">
+                    <div class="card bg-base-300 rounded-box grid h-16 flex-grow place-items-center flex-1 font-semibold">Account Balance</div>
+                    <div class="divider divider-horizontal"></div>
+                    <div class="card bg-base-300 rounded-box grid h-16 flex-grow place-items-center flex-1 font-bold text-2xl" id="balance">8500</div>
+                  </div>
+                <!-- account balance section ends -->
+<!-- payoo text section start -->
+<div class="text-section mt-5">
+    <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+    <p class="mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+</div>
+<!-- payoo text section ends -->
+                <!-- features section start -->
+                 <div class="button-features mt-5 grid grid-cols-3 gap-x-3">
+                    <button id="addMoneyBtn" class="bg-white   rounded-xl text-md py-3 px-3 font-bold cursor-pointer flex flex-col items-center">
+                        <i class="fa-solid fa-money-check text-xl text-teal-600 mb-2"></i>
+                        Add Money
+                    </button>
+                    <button id="cashOutBtn" class="bg-white  rounded-xl text-md py-3 px-3 font-bold cursor-pointer flex flex-col items-center">
+                        <i class="fa-solid fa-money-bill-trend-up text-xl text-teal-600 mb-2"></i>
+                        Cash Out
+                    </button>
+                    <button id="transectionBtn" class="bg-white  rounded-xl text-md py-3 px-3 font-bold cursor-pointer flex flex-col items-center">
+                        <i class="fa-solid fa-money-bill-transfer text-xl text-teal-600 mb-2"></i>
+                       Transection
+                    </button>
+                 </div>
+                <!-- features section  ends-->
+
+                <!-- add money section -->
+                <div id="addMoneySection" class="hidden  card bg-teal-600 w-full max-w-sm shrink-0 shadow-2xl mt-7">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label ">
+                          <span class="label-text font-bold text-white">Amount</span>
+                        </label>
+                        <input id="add-money-amount" type="text" placeholder="Amount of money" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-white">Pin</span>
+                        </label>
+                        <input id="add-money-pin" type="password" placeholder="Enter Pin Number" class="input input-bordered" required />
+                       
+                      </div>
+                      <div class="form-control mt-2">
+                        <button id="add-money-button" class="btn btn-accent  text-gray-900 font-bold">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- add money section ends-->
+
+                <!-- cash out section start -->
+                 <div id="cashOutSection" class="card bg-teal-600 w-full max-w-sm shrink-0 shadow-2xl mt-7 "> 
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-white">Amount</span>
+                        </label>
+                        <input id="cashOut-money-amount" type="text" placeholder="Amount of money" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-white">Pin</span>
+                        </label>
+                        <input id="cashOut-money-pin" type="password" placeholder="Enter Pin Number" class="input input-bordered" required />
+                       
+                      </div>
+                      <div class="form-control mt-2">
+                        <button id="cashOut-money-button" class="btn btn-accent text-gray-900 font-bold">Cash Out</button>
+                      </div>
+                    </form>
+                  </div> 
+                <!-- cash out section ends -->
+
+                <!-- transection section start -->
+                 <div id="transection" class="hidden transection mt-5">
+                    <h4 class="text-bold text-2xl">Transection History</h4>
+                    <div id="transection-history" class="space-y-2 mt-3">
+
+                    </div>
+                 </div>
+                <!-- transection section ends -->
+
+
+              </div>
+            </div>
+          </div>
+     </main>
+     <!-- main ends -->
+
+    <!-- js -->
+     <script src="/js/utilitis.js"></script>
+     <script src="/js/addMoney.js"></script>
+     <script src="/js/cashOut.js"></script>
+     <script src="/js/feature.js"></script>
+     <script src="/js/transection.js"></script>
+
+     <!-- font awesome cdn -->
+     <script src="https://kit.fontawesome.com/24c3462315.js" crossorigin="anonymous"></script>
+</body>
+</html>
